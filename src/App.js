@@ -1,11 +1,11 @@
 import React from "react"
 import './App.css';
-
+import Routes from "./routes/index"
 function App() {
   return (
-    <React.Fragment className="" >
-
-    </React.Fragment>
+    <div>
+      <Routes />
+    </div>
   );
 }
 
