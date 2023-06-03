@@ -1,33 +1,38 @@
 import { useState } from "react";
 import { useFormik } from "formik";
-import validationSchema from "../FormComponents/LoginValidation";
-import Input from "../FormComponents/Input";
-import Button from "../FormComponents/Button";
-
-
-
+import validationSchema from "../../components/FormComponents/LoginValidation";
+import Input from "../../components/FormComponents/Input";
+import Button from "../../components/FormComponents/Button";
+import { useNavigate } from "react-router-dom";
 
 function LoginPage() {
-
-  const ADMİN ={
-    email:"dogukan@gmail.com",
-    password:"1234"
-  }
-
-
-
-  const [initialValues, setInitialValues] = useState({
+  const ADMİN = {
+    email: "admin@gmail.com",
+    password: "12345",
+  };
+  const navigate = useNavigate();
+  const initialValues = {
     id: new Date().getTime(),
     email: "",
     password: "",
-  });
+  };
+
+  const [isEdit, setIsEdit] = useState(false);
 
   const { handleSubmit, handleChange, handleBlur, values, errors, touched } =
     useFormik({
       initialValues,
       onSubmit: (values) => {
-        console.log(values.email===ADMİN.email);////-----BURDAKALDIM
-        console.log("calistim");
+        if (
+          values.email === ADMİN.email &&
+          values.password === ADMİN.password
+        ) {
+          setIsEdit(true);
+          console.log("isEdit", isEdit);
+          navigate("/product");
+        } else {
+          alert("kullanıcı adı veya şifre hatalı");
+        }
       },
       validationSchema: validationSchema,
     });
@@ -47,13 +52,13 @@ function LoginPage() {
         )}
         <label className="text-label">PASSWORD</label>
         <Input
-         name={"password"}
+          name={"password"}
           value={values.password}
           onchange={handleChange}
           onblur={handleBlur}
           type={"password"}
-         />
-           {errors.password && touched.password && (
+        />
+        {errors.password && touched.password && (
           <div className="error-message">{errors.password}</div>
         )}
         <Button type={"submit"} />

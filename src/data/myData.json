@@ -1,0 +1,76 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "item_title": "Apple iPad 9. Nesil",
+            "item_price": 7.950,
+            "item_img": "https://cdn.dsmcdn.com/ty538/product/media/images/20220920/18/177519249/574062558/1/1_org_zoom.jpg"
+        },
+        {
+            "id": 2,
+            "item_title": "Xiaomi Redmi Pad 6 GB Ram 128 GB Tablet ",
+            "item_price": 6.099,
+            "item_img": "https://cdn.dsmcdn.com/ty562/product/media/images/20221013/15/192857540/595610299/1/1_org_zoom.jpg"
+        },
+        {
+            "id": 3,
+            "item_title": "Vorcom 10.1 Inc 4 Gb Ram ",
+            "item_price": 2.290,
+            "item_img": "https://cdn.dsmcdn.com/ty693/product/media/images/20230120/1/261777943/696047822/1/1_org_zoom.jpg"
+        },
+        {
+            "id": 4,
+            "item_title": "ASUS Zenbook Oled",
+            "item_price": 24.199,
+            "item_img": "https://cdn.dsmcdn.com/ty586/product/media/images/20221103/15/206686297/612690677/1/1_org_zoom.jpg"
+        },
+        {
+            "id": 5,
+            "item_title": "HP 245 G9 ",
+            "item_price": 9.799,
+            "item_img": "https://cdn.dsmcdn.com/ty535/product/media/images/20220916/11/175939393/570307910/1/1_org_zoom.jpg"
+        },
+        {
+            "id": 6,
+            "item_title": "Xiaomi Mi Curved Gaming Monito",
+            "item_price": 7.699,
+            "item_img": "https://cdn.dsmcdn.com/ty360/product/media/images/20220314/21/69912799/415798572/1/1_org_zoom.jpg"
+        },
+        {
+            "id": 7,
+            "item_title": "Amd Jıeshuo Rx 580 8Gb",
+            "item_price": 2.949,
+            "item_img": "https://cdn.dsmcdn.com/ty897/product/media/images/20230522/13/355280591/606813935/1/1_org_zoom.jpg"
+        },
+        {
+            "id": 8,
+            "item_title": "Apple MacBook Pro 16 ",
+            "item_price": 80.998,
+            "item_img": "https://cdn.dsmcdn.com/ty706/product/media/images/20230127/14/267709475/842067005/2/2_org_zoom.jpg"
+        },
+        {
+            "id": 9,
+            "item_title": "ASUS X515ea-bq2293w ",
+            "item_price": 6.999,
+            "item_img": "https://cdn.dsmcdn.com/ty538/product/media/images/20220922/12/178407230/575227652/1/1_org_zoom.jpg"
+        },
+        {
+            "id": 10,
+            "item_title": "Sarftech Ndr-1097 Rgb Taşınabilir Bluetooth Hoparlör",
+            "item_price": 2.599,
+            "item_img": "https://cdn.dsmcdn.com/ty926/product/media/images/20230531/20/372779685/959864088/3/3_org_zoom.jpg"
+        },
+        {
+            "id": 11,
+            "item_title": "Zeiron Tsx70 Ryzen 5 3600 16gb ",
+            "item_price": 12.083,
+            "item_img": "https://cdn.dsmcdn.com/ty446/product/media/images/20220603/16/120713368/493638116/1/1_org_zoom.jpg"
+        },
+        {
+            "id": 12,
+            "item_title": "Apple iPad Pro 4. Nesil 128 GB",
+            "item_price": 20.939,
+            "item_img": "https://cdn.dsmcdn.com/ty654/product/media/images/20221221/18/243143244/612266830/1/1_org_zoom.jpg"
+        }
+    ]
+}
