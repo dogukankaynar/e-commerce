@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useFormik } from "formik";
 import validationSchema from "../../components/FormComponents/LoginValidation";
 import Input from "../../components/FormComponents/Input";
 import Button from "../../components/FormComponents/Button";
 import { useNavigate } from "react-router-dom";
+import { allProductList } from "../../context/ProductContext";
 
 function LoginPage() {
+  const { cookies, setCookie } = allProductList();
   const ADMİN = {
     email: "admin@gmail.com",
     password: "12345",
@@ -17,7 +19,12 @@ function LoginPage() {
     password: "",
   };
 
-  const [isEdit, setIsEdit] = useState(false);
+  useEffect(() => {
+    cookies.isLoggin === "true"
+      ? navigate("/product")
+      : console.log("Giriş Başarısız");
+  }, [cookies]);
+
 
   const { handleSubmit, handleChange, handleBlur, values, errors, touched } =
     useFormik({
@@ -27,9 +34,7 @@ function LoginPage() {
           values.email === ADMİN.email &&
           values.password === ADMİN.password
         ) {
-          setIsEdit(true);
-          console.log("isEdit", isEdit);
-          navigate("/product");
+          setCookie("isLoggin", true);
         } else {
           alert("kullanıcı adı veya şifre hatalı");
         }

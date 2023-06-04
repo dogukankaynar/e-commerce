@@ -47,7 +47,8 @@
     font-size: 18px;
     border: none;
     border-radius: 15px;
-    background-color: #2e80fa;
+    background-color: #FF8B39;
+
     color: white;
     margin-top: 10px;
 }
@@ -65,65 +66,135 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    height: 100vh;
     justify-content: center;
 }
 
-.product-list{
-    width: 700px;
+.product-list {
+    width: 900px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: space-around;
-    padding-top: 40px;
-    padding: 10px;
+    padding: 30px;
     height: 100vh;
     margin-left: 250px;
+    margin-bottom: 100px;
 }
+
 .navbar {
-    width: 20%;
-    background-color: red;
+    padding: 10px;
+    width: 16%;
     height: 100%;
     position: fixed;
     top: 0;
     left: 0;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgb(137, 214, 201);
+    gap: 10px;
+    z-index: 999;
+    overflow-y: auto;
 }
-.card-item{
+.navbar::-webkit-scrollbar {
+    width: 4px;
+}
+
+.navbar::-webkit-scrollbar-thumb {
+    background-color:#ffbf91;
+    border-radius: 15px;
+  }
+  
+  .navbar::-webkit-scrollbar-track {
+    background-color: #ffffff;
+  }
+  
+  .navbar {
+    scrollbar-width: thin;
+  }
+  
+  .navbar::-moz-scrollbar {
+    width: 8px;
+  }
+  
+  .navbar::-moz-scrollbar-thumb {
+    background-color: #888;
+  }
+  
+  .navbar::-moz-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+.navbar div {
+    padding: 4px;
+}
+
+.card-item {
     height: 300px;
 }
+
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(155, 255, 233);
     max-width: 200px;
     min-width: 200px;
     margin: auto;
     text-align: center;
     font-family: arial;
-    height: auto;
-  }
-  .card img{
+    height: 309px;
+    border-radius: 5px;
+
+}
+
+.card img {
     max-width: 100px;
-  }
-  .price {
+}
+
+.price {
     color: grey;
     font-size: 22px;
-  }
-  .title{
+}
+
+.title {
     font-size: 16px;
     min-height: 30px;
     max-height: 30px;
-  }
-  .card button {
+}
+
+.card button {
     border: none;
     outline: 0;
     padding: 12px;
     color: white;
-    background-color: #000;
+    background-color: #FF8B39;
     text-align: center;
     cursor: pointer;
     width: 100%;
     font-size: 18px;
-  }
-  
-  .card button:hover {
+    border-radius: 2px;
+}
+
+.card button:hover {
     opacity: 0.7;
-  }
+}
+
+.checkbox-item {
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    gap: 9px;
+}
+
+.checkbox-label{
+    cursor: pointer;
+}
+input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+}
+
+input[type=checkbox]:checked{
+   accent-color:green;
+}
+
+hr {
+    width: 100%;
+}
