@@ -1,8 +1,7 @@
 import React from "react";
-import {allProductList} from "../../context/ProductContext"
 
 function Card({ id, title, price, img }) {
-  const {setIsLoggin}=allProductList();
+
   return (
     <div id={id} className="card-item">
       <div className="card">

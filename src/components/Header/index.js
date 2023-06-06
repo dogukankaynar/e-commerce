@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import SearchBar from "../FormComponents/SearchBarComponent";
 import { allProductList } from "../../context/ProductContext";
 import { useNavigate } from "react-router-dom";
@@ -9,6 +9,7 @@ function Header() {
   useEffect(() => {
     cookies.isLoggin === "false" && navigate("/");
   }, [cookies.isLoggin]);
+
 
   return (
     <div className="row">
