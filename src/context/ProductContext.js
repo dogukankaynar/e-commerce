@@ -8,7 +8,7 @@ const ProductContext = createContext();
 export const ProductProvider = ({ children }) => {
   const [cookies, setCookie] = useCookies(["isLoggin"]);
 
-  const [productList, SetProductList] = useState([]);
+  const [productList, SetProductList] = useState([]);//seacrhbar ile filtrele
 
   useEffect(() => {
     setCookie("isLoggin", false);

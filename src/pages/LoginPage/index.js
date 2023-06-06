@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useFormik } from "formik";
 import validationSchema from "../../components/FormComponents/LoginValidation";
 import Input from "../../components/FormComponents/Input";
@@ -20,11 +20,8 @@ function LoginPage() {
   };
 
   useEffect(() => {
-    cookies.isLoggin === "true"
-      ? navigate("/product")
-      : console.log("Giriş Başarısız");
-  }, [cookies]);
-
+    cookies.isLoggin === "true" && navigate("/product");
+  }, [cookies.isLoggin]);
 
   const { handleSubmit, handleChange, handleBlur, values, errors, touched } =
     useFormik({
